@@ -106,7 +106,7 @@ Pour cette 1ère semaine de projet, exceptionnellement, les objectifs 1 et 2 son
 3. Si nécessaire, établir les tables de routage des routeurs
 4. Si nécessaire, établir une convention de nommage
 
-# 5. Mise en place du suivi des objectifs du projet
+## 5. Mise en place du suivi des objectifs du projet
 
 ## a. Le fichier
 
