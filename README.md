@@ -52,7 +52,7 @@ Soutenir la croissance d'EcoTech Solutions, améliorer l'efficacité de leurs op
 ## 3. Sécurité
 
 - **Sécurité des Identités** : méthodes d'authentification multifactorielle (MFA).
-- **Sécurité Réseau** : Pare-feu, etsystèmes de détection d'intrusion.
+- **Sécurité Réseau** : Pare-feu, et systèmes de détection d'intrusion.
 - **Cryptage** : Sécuriser les communications et les données sensibles.
 
 ## 4. Messagerie et Stockage
