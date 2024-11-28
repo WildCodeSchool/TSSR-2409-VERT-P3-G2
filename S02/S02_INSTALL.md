@@ -4,22 +4,22 @@
 - [Prérequis techniques]()
 
 - Serveur ADDS DNS DHCP	G2-SRV-DC1	100	ADM   
-  10.0.100.51/24	  
-  10.0.100.0  
+  10.10.100.51/16	  
+  10.10.100.0  
   255.255.255.0  
-  10.0.100.254  
+  10.10.100.254  
   
 - Serveur ADDS CORE (RODC)	G2-SRV-DC2	100	ADM	  
-  10.0.100.52/24  
-  10.0.100.0  
+  10.10.100.52/16  
+  10.10.100.0  
   255.255.255.0  
-  10.0.100.254  
+  10.10.100.254  
 
 - Serveur ADDS Debian	G2-SRV-LINUX	100	ADM	  
-  10.0.100.53/24  
-  10.0.100.0  
+  10.10.100.53/16  
+  10.10.100.0  
   255.255.255.0  
-  10.0.100.254  
+  10.10.100.254  
   
 - [Étapes d'installation et de configuration]()
 - [FAQ]()
@@ -53,6 +53,9 @@
 
 ### 2. Réseau (sous Proxmox)
 
+- Adresse IP de réseau : 10.10.0.0/16
+- Adresse de passerelle : 10.10.255.254
+- Adresse IP DNS : 10.10.255.254
 
 ### Étapes d'installation et de configuration
 
