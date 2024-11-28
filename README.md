@@ -12,11 +12,9 @@
 ### Présentation du projet
 
 ### Membres du groupe de projet
-|   | Sprint S1 | Sprint S2 |  Sprint S3 | Sprint S4 |  
-| :--: | :-------: | :-------: | :-------: | :-------: |  
-| SCRUM MASTER | Martin | Martin | Igor  | Nicolas |  
-| PRODUCT OWNER | Igor | Nicolas | Martin | Elsa |  
-| TECHNICIANS | Elsa & Nicolas | Elsa & Igor | Elsa & Nicolas | Igor & Martin |  
+![Tableau Team](https://github.com/user-attachments/assets/e211ef6c-1778-45a3-a84b-fe1debb810ad)
+
+
 ## Objectif du Projet
 
 Soutenir la croissance d'EcoTech Solutions et améliorer l'efficacité de leurs opérations, tout en renforçant leur engagement envers l'innovation et la transition vers une économie verte.
