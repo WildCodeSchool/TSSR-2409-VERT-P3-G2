@@ -143,7 +143,9 @@ Choisir 1 template de chaque et s'en servir pendant toute la durée du projet.
 
 
 ### Membres du groupe de projet
-![capture equipe S3](https://github.com/user-attachments/assets/36da4f86-9f18-485c-a0e7-cdfbad52e23a)
+
+![capture equipe S4](https://github.com/user-attachments/assets/40d6570a-9b84-4311-b01d-7b9bc29a4289)
+
 
 
 ## Objectif du Projet
