@@ -4,19 +4,19 @@
 - [Prérequis techniques]()
 
 - Serveur ADDS DNS DHCP	G2-SRV-DC1	100	ADM   
-  10.10.100.51/16	  
+  10.10.100.201/16	  
   10.10.100.0  
   255.255.255.0  
   10.10.100.254  
   
 - Serveur ADDS CORE (RODC)	G2-SRV-DC2	100	ADM	  
-  10.10.100.52/16  
+  10.10.100.202/16  
   10.10.100.0  
   255.255.255.0  
   10.10.100.254  
 
-- Serveur ADDS Debian	G2-SRV-LINUX	100	ADM	  
-  10.10.100.53/16  
+- Serveur ADDS Debian	G2-SRV-GLPI	100	ADM	  
+  10.10.100.203/16  
   10.10.100.0  
   255.255.255.0  
   10.10.100.254  
