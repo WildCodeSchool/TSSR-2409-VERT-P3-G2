@@ -33,12 +33,12 @@ Adresse IP DNS : 10.10.255.254
 ### Prérequis techniques
 
 Configuration du rôle AD-DS sur Windows Server en GUI
-Pour rappeler notre serveur ECO-Maximusavec l'IP 10.10.8.100/16. Ce serveur possède les rôles DHCP , DNS et AD-DS .
+Pour rappeler notre serveur G2-SRV-DC1 l'IP 10.10.100.201/24. Ce serveur possède les rôles DHCP , DNS et AD-DS .
 
-ECO-Maximus
+G2-SRV-DC1
 
 Modèle : Windows Server 2022/ Type : VM.
-Configuration IP : 10.10.8.100/25/ Passerelle : 10.10.255.254/ Carte réseau : vmbr6.
+Configuration IP : 10.10.100.201/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
 Disque dur : 1 HDD 100GO(Système + Dossiers Partagés) / 1 HDD 100GO(RAID1) / 1 HDD 100Go(Sauvegarde).
 Processeur : 2.
 RAM : 8Go.
@@ -46,12 +46,12 @@ Fonction : DHCP/ DNS/ ADDS.
 Rendez-vous à l'annexe ADDS_Conf_WinServGUI .
 
 Installation et Configuration du rôle AD-DS sur Windows Server en Core
-Pour rappeler notre serveur ECO-Moldaveravec l'IP 10.10.8.120/16sera en version Core (non-graphique) et aura uniquement le rôle AD-DS . Il servira à la réplication des données AD-DS, afin d'avoir une redondance sur le réseau.
+Pour rappeler notre serveur G2-SRV-DC2 l'IP 10.10.100.202/24 sera en version Core (non-graphique) et aura uniquement le rôle AD-DS . Il servira à la réplication des données AD-DS, afin d'avoir une redondance sur le réseau.
 
-ECO-Moldaver
+G2-SRV-DC2
 
 Modèle : Windows Server 2022 Core/ Type : VM.
-Configuration IP : 10.10.8.120/25/ Passerelle : 10.10.255.254/ Carte réseau : vmbr6.
+Configuration IP : 10.10.100.202/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
 Disque dur : 1 HDD 32Go(Système) / 1 HDD 32GO(RAID1).
 Processeur : 2.
 RAM : 2Go.
