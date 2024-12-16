@@ -55,16 +55,16 @@ chown www-data /var/www/glpi/ -R
 
 - 3.2 . Sécurisation
 
-nous allons devoir créer plusieurs dossiers et sortir des données de la racine Web (/var/www/glpi) de manière à les stocker dans les nouveaux dossiers que nous allons créer. Ceci va permettre de faire une installation sécurisée de GLPI, qui suit les recommandations de l'éditeur.
+Nous allons devoir créer plusieurs dossiers et sortir des données de la racine Web (/var/www/glpi) de manière à les stocker dans les nouveaux dossiers que nous allons créer. Ceci va permettre de faire une installation sécurisée de GLPI, qui suit les recommandations de l'éditeur.
 
-mkdir /etc/glpi
-chown www-data /etc/glpi/
-mv /var/www/glpi/config /etc/glpi
-mkdir /var/lib/glpi
-chown www-data /var/lib/glpi/
-mv /var/www/glpi/files /var/lib/glpi
-mkdir /var/log/glpi
-chown www-data /var/log/glpi
+- mkdir /etc/glpi
+- chown www-data /etc/glpi/
+- mv /var/www/glpi/config /etc/glpi
+- mkdir /var/lib/glpi
+- chown www-data /var/lib/glpi/
+- mv /var/www/glpi/files /var/lib/glpi
+- mkdir /var/log/glpi
+- chown www-data /var/log/glpi
 
 - 3.3 . Configuration pour indiquer à GLPI ou sont stockés les données.
 
@@ -75,7 +75,9 @@ define('GLPI_CONFIG_DIR', '/etc/glpi/');
 if (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {
     require_once GLPI_CONFIG_DIR . '/local_define.php';
 }
+
 nano /etc/glpi/local_define.php
+
 <?php
 define('GLPI_VAR_DIR', '/var/lib/glpi/files');
 define('GLPI_LOG_DIR', '/var/log/glpi');
@@ -84,9 +86,9 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 
 nano /etc/apache2/sites-available/domaine.local.conf
 <VirtualHost *:80>
-    ServerName domaine.local
+   ServerName domaine.local
 
-    DocumentRoot /var/www/glpi/public
+    - DocumentRoot /var/www/glpi/public
 
     # If you want to place GLPI in a subfolder of your site (e.g. your virtual host is serving multiple applications),
     # you can use an Alias directive. If you do this, the DocumentRoot directive MUST NOT target the GLPI directory itself.
@@ -172,11 +174,11 @@ Les nouveaux utilisateurs sont visibles dans l'onglet "Adminstration/Utilisateur
 
 
 
-# 2. Réseau (sous Proxmox)
+# - 2. Réseau (sous Proxmox)
 
-Adresse IP de réseau : 10.10.0.0/16
-Adresse de passerelle : 10.10.255.254
-Adresse IP DNS : 10.10.255.254
+- Adresse IP de réseau : 10.10.0.0/16
+- Adresse de passerelle : 10.10.255.254
+- Adresse IP DNS : 10.10.255.254
 
 
 ### Sommaire
@@ -192,12 +194,12 @@ Pour rappeler notre serveur G2-SRV-DC1 l'IP 10.10.100.201/24. Ce serveur possèd
 G2-SRV-DC1
 
 Modèle : Windows Server 2022/ Type : VM.
-Configuration IP : 10.10.100.201/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
-Disque dur : 1 HDD 100GO(Système + Dossiers Partagés) / 1 HDD 100GO(RAID1) / 1 HDD 100Go(Sauvegarde).
-Processeur : 2.
-RAM : 8Go.
-Fonction : DHCP/ DNS/ ADDS.
-Rendez-vous à l'annexe ADDS_Conf_WinServGUI .
+- Configuration IP : 10.10.100.201/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
+- Disque dur : 1 HDD 100GO(Système + Dossiers Partagés) / 1 HDD 100GO(RAID1) / 1 HDD 100Go(Sauvegarde).
+- Processeur : 2.
+- RAM : 8Go.
+- Fonction : DHCP/ DNS/ ADDS.
+- Rendez-vous à l'annexe ADDS_Conf_WinServGUI .
 
 Installation et Configuration du rôle AD-DS sur Windows Server en Core
 Pour rappeler notre serveur G2-SRV-DC2 l'IP 10.10.100.202/24 sera en version Core (non-graphique) et aura uniquement le rôle AD-DS . Il servira à la réplication des données AD-DS, afin d'avoir une redondance sur le réseau.
