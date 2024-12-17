@@ -11,7 +11,7 @@
 - b. Installation d’un serveur LAMP
 - c. Création de la base de données sur MariaDB
 
-  **2 LANCEMENT DE L’INSTALLATION DE GLPI**
+**2 LANCEMENT DE L’INSTALLATION DE GLPI**
 
 Prérequis :
 
