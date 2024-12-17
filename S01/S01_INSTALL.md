@@ -53,6 +53,34 @@
 
 ### Étapes d'installation et de configuration
 
+Installation et Configuration des équipements et ressources
+Configuration du rôle AD-DS sur Windows Server en GUI
+Pour rappeler notre serveur G2-SRV-DC1 l'IP 10.10.100.201/24. Ce serveur possède les rôles DHCP , DNS et AD-DS .
+
+- G2-SRV-DC1
+
+Modèle : Windows Server 2022/ Type : VM.
+Configuration IP : 10.10.100.201/24/ Passerelle : 10.10.100.254/ Carte réseau : G2SwitchL3.
+Disque dur : 1 HDD 32 Go 
+Processeur : 2.
+RAM : 4 Go.
+Fonction : DHCP/ DNS/ ADDS.
+
+
+Installation et Configuration du rôle AD-DS sur Windows Server en Core
+Pour rappeler notre serveur G2-SRV-DC2 l'IP 10.10.100.202/24 sera en version Core (non-graphique) et aura uniquement le rôle AD-DS . Il servira à la réplication des données AD-DS, afin d'avoir une redondance sur le réseau.
+
+- G2-SRV-DC2
+
+Modèle : Windows Server 2022 Core/ Type : VM.
+Configuration IP : 10.10.100.202/24 / Passerelle : 10.10.100.254/ Carte réseau : G2SwitchL3
+Disque dur : 1 HDD 32 Go 
+Processeur : 2.
+RAM : 2 Go.
+Fonction : DNS/ ADDS.
+
+
+
 
 
 ### FAQ :
