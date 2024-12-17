@@ -7,6 +7,8 @@
 
 ### Utilisation de base
 
+ Mise à jour des paquets Debian
+
 
 ### Utilisation avancée
 
