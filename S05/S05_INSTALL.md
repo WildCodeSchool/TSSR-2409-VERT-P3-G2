@@ -7,7 +7,7 @@
 
 ### Prérequis techniques
 
-1. Objectifs
+**1. Objectifs**
 
 1. DOSSIERS PARTAGES - Mettre en place des dossiers réseaux pour les utilisateurs
 	- 1 . Stockage des données sur un volume spécifique
@@ -37,7 +37,7 @@
 	- 2 . Pour les administrateurs : bypass
 	- 3 . Gestion des exceptions : prévoir un groupe bypass
 
-# 2. Optimisation de l'infrastructure réseau
+**2. Optimisation de l'infrastructure réseau**
 
 L'infrastructure réseau du projet commence à prendre forme :
 - Plus de serveurs
