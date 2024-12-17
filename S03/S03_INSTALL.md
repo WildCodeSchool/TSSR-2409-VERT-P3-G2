@@ -5,7 +5,7 @@
 
 **Objectifs**
 
- **1 PREPARATION DE LA MACHINE DEBIAN 12**
+  **1 PREPARATION DE LA MACHINE DEBIAN 12**
 
 - a. Mise à jour des paquets
 - b. Installation d’un serveur LAMP
