@@ -7,7 +7,7 @@
 
 ### Prérequis techniques
 
-### Fournir un plan d'adressage réseau complet cohérent :
+**Fournir un plan d'adressage réseau complet cohérent :**
 
     - Configuration IP de LAN/VLAN
     - Configuration IP des matériels réseaux
