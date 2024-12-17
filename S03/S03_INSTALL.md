@@ -1,6 +1,9 @@
-## Documentation Administrateur
+### Sommaire
+- [Prérequis techniques]()
+- [Étapes d'installation et de configuration]()
+- [FAQ]()
 
-# 1. Objectifs
+**1. Objectifs**
 
 1. AD-DS - Création d'un domaine AD
 -	1 . Un serveur Windows Server 2022 GUI avec les rôles AD-DS, DHCP, DNS
@@ -20,30 +23,18 @@
 
 
 
-
-
-
-
-
-
-# - 2. Réseau (sous Proxmox)
+**- 2. Réseau (sous Proxmox)**
 
 - Adresse IP de réseau : 10.10.0.0/16
 - Adresse de passerelle : 10.10.255.254
 - Adresse IP DNS : 10.10.255.254
 
-
-### Sommaire
-- [Prérequis techniques]()
-- [Étapes d'installation et de configuration]()
-- [FAQ]()
-
-### Prérequis techniques
+**Prérequis techniques**
 
 Configuration du rôle AD-DS sur Windows Server en GUI
 Pour rappeler notre serveur G2-SRV-DC1 l'IP 10.10.100.201/24. Ce serveur possède les rôles DHCP , DNS et AD-DS .
 
-G2-SRV-DC1
+**G2-SRV-DC1**
 
 Modèle : Windows Server 2022/ Type : VM.
 - Configuration IP : 10.10.100.201/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
@@ -56,7 +47,7 @@ Modèle : Windows Server 2022/ Type : VM.
 Installation et Configuration du rôle AD-DS sur Windows Server en Core
 Pour rappeler notre serveur G2-SRV-DC2 l'IP 10.10.100.202/24 sera en version Core (non-graphique) et aura uniquement le rôle AD-DS . Il servira à la réplication des données AD-DS, afin d'avoir une redondance sur le réseau.
 
-G2-SRV-DC2
+**G2-SRV-DC2**
 
 Modèle : Windows Server 2022 Core/ Type : VM.
 Configuration IP : 10.10.100.202/24 Passerelle : 10.10.100.254/ Carte réseau : G2switchL3.
@@ -65,8 +56,7 @@ Processeur : 2.
 RAM : 2Go.
 Fonction : DNS/ ADDS.
 
-
-### Étapes d'installation et de configuration
+**Étapes d'installation et de configuration**
 
 Installation du rôle ADDS
 Installation du rôle ADDS sur Windows Server en GUI
@@ -130,4 +120,3 @@ Dans le Gestionnaire de serveur , cliquez sur Outils puis Utilisateurs et ordina
 
 
 
-### FAQ :
