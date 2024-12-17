@@ -32,48 +32,52 @@ Remarque : cette étape n’est pas nécessaire si un serveur LAMP a déjà ét�
 apt install apache2
 - b . Installation PHP 8.2 (GLPI 10 nécessite une version PHP 8 au minimum) :
 Pour installer PHP 8.2 en tant que module Apache, vous devez procéder ainsi (Debian 12 possède les paquets PHP 8.2 par défaut) :
-apt install php libapache2-mod-php
-sudo systemctl restart apache2
+
+  **apt install php libapache2-mod-php**
+ **sudo systemctl restart apache2**
+
 - c . Installation de MariaDB :
 
-**apt install mariadb-server**
+  **apt install mariadb-server**
 
 Une fois l’installation de MariaDB effectuée, lancez l’utilitaire de configuration du mot de passe root en saisissant la commande
 suivante :
 
-mysql_secure_installation (suivez les étapes pour sécuriser MariaDB en définissant le mot de passe du root)
+   **mysql_secure_installation (suivez les étapes pour sécuriser MariaDB en définissant le mot de passe du root)**
 
 - 3 – Création de la base de données « GLPI »
 
 Pour commencer nous allons nous connecter à MariaDB afin de créer une base de données :
 
-**mysql -u root -p**
+   **mysql -u root -p**
 
 (saisir le mot de passe du root que vous avez défini lors de l’installation)
 Ensuite nous allons créer une base de données nommée « glpi », créer un utilisateur « glpi », lui donner un mot de passe et lui
 accorder tous les droits de lecture/écriture. Pour cela, nous saisissons les commandes :
 
-create database glpi; (création de la base de données « glpi »)
-create user 'glpi'@'localhost' identified by 'glpi'; (création de l’utilisateur avec son mot de passe qui sera « glpi »)
-grant all privileges on glpi.* to 'glpi'@'localhost' with grant option; (on augmente les droits de l’utilisateur)
+ **create database glpi; (création de la base de données « glpi »)**
+ **create user 'glpi'@'localhost' identified by 'glpi'; (création de l’utilisateur avec son mot de passe qui sera « glpi »)**
+  grant all privileges on glpi.* to 'glpi'@'localhost' with grant option; (on augmente les droits de l’utilisateur)
 
 flush privileges; (on met à jour les modifications apportées)
 quit (ou exit)
+
 - 4 – Téléchargement et décompression de l’archive « GLPI »
 
 Pour installer GLPI, il est nécessaire de connaître le lien de téléchargement du logiciel. En parcourant le web, on trouve l’adresse
 exacte de téléchargement de la dernière version stable (on évitera les versions beta et RC) :
-https://github.com/glpi-project/glpi/releases/download/10.10.100.203/glpi-10.10.100.203.tgz
+
+  **https://github.com/glpi-project/glpi/releases/download/10.10.100.203/glpi-10.10.100.203.tgz**
 
 Sur la machine Debian, on peut créer un dossier « glpi » dans lequel on téléchargera l’archive, puis on lance le téléchargement de
 l’archive GLPI depuis ce dossier.
 
 
-wget https://github.com/glpi-project/glpi/releases/download/10.10.100.203/glpi-10.10.100.203.tgz
+  **wget https://github.com/glpi-project/glpi/releases/download/10.10.100.203/glpi-10.10.100.203.tgz**
 
 Une fois l’archive téléchargée, il faut la décompresser en saisissant :
 
-**tar xvf glpi-10.10.100.203.tgz**
+  **tar xvf glpi-10.10.100.203.tgz**
 
 Un dossier « glpi » est créé (et contient tous les fichiers nécessaires à l’installation de GLPI) :
 
@@ -99,12 +103,12 @@ Il faut apporter des modifications nécessaires à la bonne installation de GLPI
 On commence par donner la propriété du dossier GLPI à l’administrateur d’Apache (le « www-data ») et on accorde les droites
 nécessaires :
 
-**chown -R www-data:www-data /var/www/html/glpi/**
-**chmod -R 755 /var/www/html/glpi/**
+ **chown -R www-data:www-data /var/www/html/glpi/**
+ **chmod -R 755 /var/www/html/glpi/**
 
 On redémarre le serveur Apache :
 
-**systemctl restart apache2**
+ **systemctl restart apache2**
 
 Pour terminer l’installation de l’helpdesk GLPI, il suffit d’ouvrir le navigateur et de saisir, dans la barre d’adresse, l’IP de votre
 serveur web Apache suivi de /glpi. 
@@ -151,7 +155,7 @@ le mot de passe dans le profil.
 Pour le fichier « install.php », il faudra revenir sur notre serveur web (Debian) et taper cette commande pour supprimer le fichier
 par mesure de sécurité :
 
-**rm -f /var/www/html/glpi/install/install.php**
+ **rm -f /var/www/html/glpi/install/install.php**
 
 Si on déconnecte la session administrateur et que l’on se reconnecte avec « glpi » - « glpi », l’écran d’accueil s’affiche (nous avons,
 ici, laissé les mots de passe par défaut mais l’alerte sur le fichier « install.php » a bien disparu) :
