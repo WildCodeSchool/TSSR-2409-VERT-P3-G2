@@ -33,7 +33,7 @@
 
 ### Étapes d'installation et de configuration
 
-**Création des groupes dans l'AD**
+**2. Création des groupes dans l'AD**
 
 - Ouvrir le serveur ADDS préalablement installé et configuré
 - Une fois le serveur mis en service 
