@@ -22,12 +22,12 @@
 2 – INSTALLATION DE pfSENSE SUR L'HYPERVISEUR PROXMOX 
 
 • 1 machine virtuelle pfSENSE (avec 2 interfaces "WAN" et "LAN")
-• 1 machine Windows 10 de test qui sera connectée à l'interface "LAN" de pfSENSE
-• 1 conteneur LXC Debian (qui abritera un serveur web) qui sera connecté à l'interface "LAN" de pfSENSE
-• Nous possédons une adresse IP Publique (dite "IP Failover" qui nous a été fournie par notre hébergeur)
-• L'adresse IP Failover fournie par notre hébergeur possède une adresse MAC virtuelle (fournie également)
-• Nous possédons une adresse de passerelle commune qui nous a été fournie par notre hébergeur
-• Nous avons un sous-domaine hébergé chez OVH pour nos tests (non obligatoire)
+-  1 machine Windows 10 de test qui sera connectée à l'interface "LAN" de pfSENSE
+-  1 conteneur LXC Debian (qui abritera un serveur web) qui sera connecté à l'interface "LAN" de pfSENSE
+-  Nous possédons une adresse IP Publique (dite "IP Failover" qui nous a été fournie par notre hébergeur)
+-  L'adresse IP Failover fournie par notre hébergeur possède une adresse MAC virtuelle (fournie également)
+-  Nous possédons une adresse de passerelle commune qui nous a été fournie par notre hébergeur
+-  Nous avons un sous-domaine hébergé chez OVH pour nos tests (non obligatoire)
 
 **1ère étape : téléchargement de l'image ISO de pfSENSE**
 
