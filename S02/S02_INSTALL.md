@@ -55,7 +55,7 @@
 
 ### Étapes d'installation et de configuration
 
-**Étapes d'installation des groupes dans l'AD**
+**Création des groupes dans l'AD**
 
 - Ouvrir le serveur ADDS préalablement installé et configuré
 - Une fois le serveur mis en service 
