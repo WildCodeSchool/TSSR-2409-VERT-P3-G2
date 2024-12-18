@@ -104,5 +104,37 @@ Rmq : Pour l'utilisation d'autres tags, voir avec le formateur/la formatrice.
 
 ### Étapes d'installation et de configuration
 
+**Installation de Pfsense**
+
+![Pfsence-1](https://github.com/user-attachments/assets/801a70c1-f554-4a87-baef-b1e13e79ea36)
+
+
+
+![Pfsence-2](https://github.com/user-attachments/assets/bccf0d8f-20ee-4edf-90f3-29b378f7ec8f)
+
+
+
+![Pfsence-3](https://github.com/user-attachments/assets/8c355607-f351-40f5-8b90-819fc9c3479d)
+
+
+
+![Pfsence-4](https://github.com/user-attachments/assets/560eda5b-7bf0-4a8d-8b9d-357733865e99)
+
+
+
+![Pfsence-5](https://github.com/user-attachments/assets/017e4292-8e02-4bb7-b380-4bbaeffcc942)
+
+
+
+![Pfsence-6](https://github.com/user-attachments/assets/9b15cd87-4963-46ca-b89c-4e05bbf20770)
+
+
+
+![Pfsence-7](https://github.com/user-attachments/assets/74fffbfa-30bc-4da3-97ec-bac10d4a34f1)
+
+
+
+
+
 
 ### FAQ :
