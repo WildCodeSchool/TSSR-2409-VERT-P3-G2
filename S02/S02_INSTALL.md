@@ -7,28 +7,6 @@
 
 ### Prérequis techniques
 
-**1. Objectifs**
-
-- Serveur ADDS DNS DHCP	G2-SRV-DC1	100	ADM   
-  10.10.100.201/16	  
-  10.10.100.0  
-  255.255.255.0  
-  10.10.100.254  
-  
-- Serveur ADDS CORE (RODC)	G2-SRV-DC2	100	ADM	  
-  10.10.100.202/16  
-  10.10.100.0  
-  255.255.255.0  
-  10.10.100.254  
-
-- Serveur ADDS Debian	G2-SRV-GLPI	100	ADM	  
-  10.10.100.203/16  
-  10.10.100.0  
-  255.255.255.0  
-  10.10.100.254  
-
-
-
 **1. AD-DS - Création d'un domaine AD**
 	
 - 1 . Un serveur Windows Server 2022 GUI avec les rôles AD-DS, DHCP, DNS
