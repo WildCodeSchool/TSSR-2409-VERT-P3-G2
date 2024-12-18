@@ -67,27 +67,17 @@ Chaque éléments de l'infrastructure :
 
 ### Étapes d'installation et de configuration
 
- # DOSSIERS PARTAGES  
+ **DOSSIERS PARTAGES**  
 
- -Installation d'un serveur dédié au partage  
-
- -Sur virtualbox, installer windows server avec 2 disques dur de 10G  
- -Démarrer Windows et faite l'intallation  
- -Une fois installé, cliqué sur Add roles et Features  
- -Suivez l'installation et au niveau du "server roles" cliquez sur la petite fleche comme l'exemple ci dessous  
+- Installation du serveur de fichier avec Windows Server
+- Renomer le serveur "G2-SRV-SHARE"
+- Attribution de son adresse IP conformement au plan d'adressage (10.10.100.204/24)
+ - Pour configurer le Server de fichier cliquer sur Add roles et Features  
+ - Cocher "File and Storage Services" 
 
  ![1](https://github.com/user-attachments/assets/92b20883-95ef-4da7-95e6-76fbc64f976e)  
- - Cliquez sur suivant jusqu'à installation.
+ - Cliquer sur suivant jusqu'à installation
 
 
- -G2-SRV-SHARE
-
- - Adresse Ip:    10.10.100.204/24  
- - Réseau:        10.10.100.0  
- - Sous reseau:   255.255.255.0
- - Broadcast      10.10.100.254
-
- - 
-
-
+ 
 ### FAQ :
