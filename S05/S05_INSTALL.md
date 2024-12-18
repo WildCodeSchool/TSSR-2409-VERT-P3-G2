@@ -74,9 +74,20 @@ Chaque éléments de l'infrastructure :
 - Attribution de son adresse IP conformement au plan d'adressage (10.10.100.204/24)
  - Pour configurer le Server de fichier cliquer sur Add roles et Features  
  - Cocher "File and Storage Services" 
-
- ![1](https://github.com/user-attachments/assets/92b20883-95ef-4da7-95e6-76fbc64f976e)  
  - Cliquer sur suivant jusqu'à installation
+
+**Céer un partage SMB sous Windows Server**  
+
+- Toujours à partir du"Gestionnaire de server" cliquer sur "Service de fichiers et de stockage" puis sur partages  
+- Cliquer sur le bouton "Tâches" pour lancer l'assistance
+- Dans l'assistance, cliquer sur "Partage SMB-Rapide"
+- Si ce n'est pas déjà fait, créez le répertoire correspondant au partage sur votre serveur (ex: C:\Partage)
+- À l'étape "Emplacement du partage", nous choisissons "Tapez un chemin personnalisé" nous cliquon sur "Parcourir" puis sélectionner le répertoire "Partage" avant de valider
+- Donner un nom à "Nom de partage"
+- Activer l'enumération basée sur l'acces puis valider
+- Dans les autorisations, nous laissons par defaut (pour le moment) les permissions NTFS du dossier
+- Cliquer sur créer
+
 
 
  
