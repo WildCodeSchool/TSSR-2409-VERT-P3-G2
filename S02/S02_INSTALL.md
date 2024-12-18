@@ -53,20 +53,18 @@
 - 1 . Sur le domaine AD
 - 2 . Avec un compte utilisateur ayant un accès SSH sur le serveur Linux  
 
-  
+### Étapes d'installation et de configuration
 
 **Étapes d'installation des groupes dans l'AD**
 
-- Ouvrir serveur ADDS préalablement installé et configuré
+- Ouvrir le serveur ADDS préalablement installé et configuré
 - Une fois le serveur mis en service 
-- Aller dans "tool" en haut à droite puis "Active Directory Users and Computeurs "  
+- Aller dans "tool" en haut à droite puis "Active Directory Users and Computeurs"  
 - Sélectionner l'OU correspondand puis faire un click droit  
 - Ensuite, faite "New" puis "Group"  
-- Entrez le nom du goupe en respectant bien la typographie et selectionner dans le Groupe scope "Global" et dans Groupe type "Sécurity" par defaut
+- Entrez le nom du goupe en respectant bien la typographie et selectionner dans le Groupe scope "Global" et dans Groupe type "Sécurity" par défaut
 - Cliquez sur "OK"
-- Comme vous pouvez le constater, le groupe à était crée.
-
-
+- Comme vous pouvez le constater, le groupe a été crée.
 
 
 
