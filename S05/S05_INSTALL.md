@@ -67,8 +67,7 @@ Chaque éléments de l'infrastructure :
 
 ### Étapes d'installation et de configuration
 
- **DOSSIERS PARTAGES**  
-
+ **1. DOSSIERS PARTAGES**  
 - Installation du serveur de fichier avec Windows Server
 - Renomer le serveur "G2-SRV-SHARE"
 - Attribution de son adresse IP conformement au plan d'adressage (10.10.100.204/24)
