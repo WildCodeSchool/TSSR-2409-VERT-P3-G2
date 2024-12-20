@@ -1,3 +1,15 @@
+# DHCP Relay
+
+Pour configurer le DHCP relay, accédez à pfSense, puis à **Services** et sélectionnez **DHCP Relay**.
+
+Cochez ensuite l'option **"Enable DHCP relay on interface"**.
+
+Dans la liste des interfaces, choisissez **LAN** par exemple.
+
+Ajoutez l'adresse IPv4 du serveur vers lequel les demandes DHCP doivent être relayées dans le champ **"Destination server"**.
+
+Cliquez sur **Save**. Un message apparaîtra pour indiquer que les modifications ont été appliquées avec succès.
+
 ## Documentation Utilisateur
 
 ### Sommaire
