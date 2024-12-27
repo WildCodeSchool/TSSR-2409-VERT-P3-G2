@@ -261,5 +261,5 @@ FAQ : Solutions aux problèmes connus et communs liés à l'installation et à l
 Configuration du rôle ADDS sur Windows Server en GUI
 Dans le Gestionnaire de serveur , cliquez sur Outils puis Utilisateurs et ordinateurs Active Directory .
 
-Concernant cet exemple je vais vous faire part d'une partie que j'ai pu réaliser avec mon groupe concernant l'installation de GLPI sur une machine DEBIAN 12.Je vais faire une description de la procédure liée a l'installation de GLPI.
+
 
