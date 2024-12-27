@@ -1,5 +1,5 @@
 ## Documentation Utilisateur
-Concernant la description de cet exemple je vais détailler la procédure d'installation de Pfsense.
+
 ### Sommaire
 - [Utilisation de base]()
 - [Utilisation avancée]()
