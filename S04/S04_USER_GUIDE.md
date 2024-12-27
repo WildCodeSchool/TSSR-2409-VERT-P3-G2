@@ -46,7 +46,7 @@ Installer. Attention, il s'agit d'un fichier au format ".iso.gz" qu'il faudra d�
 • Dans la vue serveur, cliquez le stockage "Local" et "Images ISO" dans le volet de droite
 • Cliquez le bouton "Téléverser" pour transférer l'image depuis votre PC vers votre serveur Proxmox
 
-Note : vous pouvez également téléverser l'image ISO de pfSENSE depuis une adresse URL valide si vousen avez une avec le fichier pfSENSE au format ".iso"
+Note : vous pouvez également téléverser l'image ISO de pfSENSE depuis une adresse URL valide si vous en avez une avec le fichier pfSENSE au format ".iso"
 
 **3 ème étape : création d'un "vmbr" sur l'hyperviseur Proxmox**
 
