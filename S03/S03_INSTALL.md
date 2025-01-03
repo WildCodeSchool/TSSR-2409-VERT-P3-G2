@@ -108,9 +108,9 @@ Configuration du domaine avec mot de passe
 
 <details>
 	<summary>Integration du server GLPI dans le domaine</summary>
-	ggiyg  
-	blabla  
-	coucou  
+- ggiyg
+- blabla  
+- coucou  
 </details>
 
 
