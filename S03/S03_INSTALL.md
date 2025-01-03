@@ -106,7 +106,11 @@ Configuration du domaine avec mot de passe
 ![Capture DHCP-12](https://github.com/user-attachments/assets/0f88116a-41e6-4133-a83d-fc5a1e45e38d)
 </details>
 
-
+<details>
+	<summary>Integration du server GLPI dans le domaine</summary>
+	- ggiyg
+	- coucou
+</details>
 
 
 **FAQ** 
